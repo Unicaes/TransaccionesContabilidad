@@ -53,7 +53,7 @@ namespace ProyectoContabilidad.View
                 }
                 else
                 {
-                    this.dataGridView1.Rows[i].Cells[5].Value = deudor - acreedor;
+                    this.dataGridView1.Rows[i].Cells[5].Value = acreedor - deudor;
                     suma4 += (acreedor - deudor);
                     this.dataGridView1.Rows[i].Cells[4].Value = 0;
                 }

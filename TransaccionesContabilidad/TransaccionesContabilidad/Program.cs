@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TransaccionesContabilidad.View;
 
 namespace TransaccionesContabilidad
 {
@@ -17,6 +18,7 @@ namespace TransaccionesContabilidad
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new TablaIvaInventario());
             Application.Run(new Balance());
         }
     }
