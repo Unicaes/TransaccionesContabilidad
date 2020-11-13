@@ -18,8 +18,8 @@ namespace TransaccionesContabilidad
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new TablaIvaInventario());
-            Application.Run(new Balance());
+            Application.Run(new TablaIvaInventario());
+            //Application.Run(new Balance());
         }
     }
 }

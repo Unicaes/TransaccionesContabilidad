@@ -24,8 +24,8 @@ namespace ProyectoContabilidad.View
             this.dataGridView1.Rows.Add(1109, "INVENTARIO",0,0,0,0);
             this.dataGridView1.Rows.Add(4101,"COMPRAS",0,0,0,0);
             this.dataGridView1.Rows.Add(5101,"VENTAS",0,0,0,0);
-            this.dataGridView1.Rows.Add(1112, "IVA CREDITO FISCAL",0,0,0,0);
-            this.dataGridView1.Rows.Add(2109, "IVA DEBITO FISCAL",0,0,0,0);
+            this.dataGridView1.Rows.Add(2109, "IVA DEBITO FISCAL", 0, 0, 0, 0);
+            this.dataGridView1.Rows.Add(1112, "IVA CREDITO FISCAL",0,0,0,0); 
             this.dataGridView1.Rows.Add(11010103, "BANCO",0,0,0,0);
             this.dataGridView1.Rows.Add(11010102, "CAJA CHICA",0,0,0,0);
             this.dataGridView1.Refresh();
