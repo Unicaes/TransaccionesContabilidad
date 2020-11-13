@@ -70,7 +70,9 @@ namespace ProyectoContabilidad.View
         {
             InventarioFinal invFinal = new InventarioFinal();
             invFinal.CalcularInventarioFinal(this.dataGridView1);
-            TablaIvaInventario frmTabla = new TablaIvaInventario(invFinal);
+            iva frmIva = new iva();
+            frmIva.CalcularIva(this.dataGridView1);
+            TablaIvaInventario frmTabla = new TablaIvaInventario(invFinal,frmIva);
             frmTabla.Show();
         }
     }

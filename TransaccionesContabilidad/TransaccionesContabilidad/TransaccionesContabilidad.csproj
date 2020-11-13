@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="ViewModel\AjusteIva.cs" />
     <Compile Include="ViewModel\InventarioFinal.cs" />
+    <Compile Include="ViewModel\iva.cs" />
     <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
