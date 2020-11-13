@@ -15,7 +15,7 @@ namespace TransaccionesContabilidad.View
     {
         AjusteIva ajuste_iva;
 
-        public TablaIvaInventario()
+        public TablaIvaInventario(InventarioFinal invFinal)
         {
             InitializeComponent();
             ajuste_iva = new AjusteIva();
