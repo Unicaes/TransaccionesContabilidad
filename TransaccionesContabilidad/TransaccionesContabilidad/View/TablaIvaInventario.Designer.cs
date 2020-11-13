@@ -34,6 +34,7 @@ namespace TransaccionesContabilidad.View
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.concepto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mov_deudor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mov_acree = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +59,7 @@ namespace TransaccionesContabilidad.View
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cod,
             this.concepto,
+            this.mov_deudor,
             this.mov_acree});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -101,11 +103,21 @@ namespace TransaccionesContabilidad.View
             this.concepto.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.concepto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
+            // mov_deudor
+            // 
+            this.mov_deudor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.mov_deudor.FillWeight = 99.34443F;
+            this.mov_deudor.HeaderText = "Debe";
+            this.mov_deudor.MinimumWidth = 6;
+            this.mov_deudor.Name = "mov_deudor";
+            this.mov_deudor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.mov_deudor.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
             // mov_acree
             // 
             this.mov_acree.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.mov_acree.FillWeight = 100.179F;
-            this.mov_acree.HeaderText = "Valor";
+            this.mov_acree.HeaderText = "Haber";
             this.mov_acree.MinimumWidth = 6;
             this.mov_acree.Name = "mov_acree";
             this.mov_acree.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -129,6 +141,7 @@ namespace TransaccionesContabilidad.View
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cod;
         private System.Windows.Forms.DataGridViewTextBoxColumn concepto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mov_deudor;
         private System.Windows.Forms.DataGridViewTextBoxColumn mov_acree;
     }
 }
