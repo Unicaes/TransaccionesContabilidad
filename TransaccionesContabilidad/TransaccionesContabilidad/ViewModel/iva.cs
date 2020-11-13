@@ -9,8 +9,8 @@ namespace TransaccionesContabilidad.ViewModel
 {
     public class iva
     {
-        public double debitoHaber, debitoDeber;
-        public double creditoHaber, creditoDeber;
+        public double debitoHaber, debitoDeber,ivaDebito;
+        public double creditoHaber, creditoDeber,ivaCredito;
         public double ivaPagar;
         public double ivaDebe, ivaHaber;
         public void CalcularIva(DataGridView tabla)
@@ -28,7 +28,9 @@ namespace TransaccionesContabilidad.ViewModel
                     creditoDeber = Convert.ToDouble(tabla.Rows[i].Cells[2].Value);
                 }
             }
-            ivaPagar = (creditoHaber - creditoDeber) - (debitoDeber - debitoHaber);
+            ivaDebito = debitoDeber - debitoHaber;
+            ivaCredito = creditoHaber - creditoDeber;
+            ivaPagar = ivaCredito - ivaDebito;
             ivaDebe = debitoDeber + creditoDeber;
             ivaHaber = debitoHaber + creditoHaber;
         }
