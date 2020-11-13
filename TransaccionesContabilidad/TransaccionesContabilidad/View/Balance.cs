@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TransaccionesContabilidad.View;
+using TransaccionesContabilidad.ViewModel;
 
 namespace ProyectoContabilidad.View
 {
@@ -62,6 +64,14 @@ namespace ProyectoContabilidad.View
             this.lblSuma2.Text = suma2.ToString();
             this.lblSuma3.Text = suma3.ToString();
             this.lblSuma4.Text = suma4.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            InventarioFinal invFinal = new InventarioFinal();
+            invFinal.CalcularInventarioFinal(this.dataGridView1);
+            TablaIvaInventario frmTabla = new TablaIvaInventario(invFinal);
+            frmTabla.Show();
         }
     }
 }
