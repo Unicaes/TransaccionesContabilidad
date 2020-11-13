@@ -26,7 +26,7 @@ namespace TransaccionesContabilidad.View
             this.dataGridView1.Rows.Add(0, "AJUSTE DE IVA", 0, 0);
             this.dataGridView1.Rows.Add(4101, "COMPRAS", 0, 0);
             this.dataGridView1.Rows.Add(1109, "INVENTARIO", 0, 0);
-            this.dataGridView1.Rows.Add(0, "MERCANCIA DISPONIBLE", 0, 0);
+            this.dataGridView1.Rows.Add(0, "MERCANCIA DISPONIBLE", 0, invFinal.GetInventarioFinal());
             this.dataGridView1.Rows.Add(1109, "INVENTARIO", 0, 0);
             this.dataGridView1.Rows.Add(4101, "COMPRAS", 0, 0);
             this.dataGridView1.Rows.Add(0, "DETERMINAR COSTO DE VENTA", 0, 0);

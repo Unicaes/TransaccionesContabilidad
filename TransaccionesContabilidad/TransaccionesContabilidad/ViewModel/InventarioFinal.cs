@@ -16,15 +16,15 @@ namespace TransaccionesContabilidad.ViewModel
             {
                 if (tabla.Rows[i].Cells[0].Value.Equals(1109))
                 {
-                    inventarioInicial = (double)tabla.Rows[i].Cells[4].Value + (double)tabla.Rows[i].Cells[4].Value;
+                    inventarioInicial = Convert.ToDouble(tabla.Rows[i].Cells[4].Value) + Convert.ToDouble(tabla.Rows[i].Cells[5].Value);
                 }
                 if (tabla.Rows[i].Cells[0].Value.Equals(4101))
                 {
-                    compras = (double)tabla.Rows[i].Cells[4].Value + (double)tabla.Rows[i].Cells[4].Value;
+                    compras = Convert.ToDouble(tabla.Rows[i].Cells[4].Value) + Convert.ToDouble(tabla.Rows[i].Cells[5].Value);
                 }
                 if (tabla.Rows[i].Cells[0].Value.Equals(5101))
                 {
-                    ventas = (double)tabla.Rows[i].Cells[4].Value + (double)tabla.Rows[i].Cells[4].Value;
+                    ventas = Convert.ToDouble(tabla.Rows[i].Cells[4].Value) + Convert.ToDouble(tabla.Rows[i].Cells[5].Value);
                 }
             }
             inventarioFinal = inventarioInicial + compras - ventas;
