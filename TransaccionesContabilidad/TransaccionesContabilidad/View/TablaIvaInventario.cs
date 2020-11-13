@@ -15,7 +15,7 @@ namespace TransaccionesContabilidad.View
     {
         AjusteIva ajuste_iva;
 
-        public TablaIvaInventario(InventarioFinal invFinal,iva Iva)
+        public TablaIvaInventario(InventarioFinal invFinal,iva Iva, costoventa costoVenta)
         {
             InitializeComponent();
             //ajuste_iva = new AjusteIva();
@@ -39,9 +39,9 @@ namespace TransaccionesContabilidad.View
             this.dataGridView1.Rows.Add(4101, "COMPRAS", 0, 0);
             this.dataGridView1.Rows.Add(1109, "INVENTARIO", 0, 0);
             this.dataGridView1.Rows.Add(0, "MERCANCIA DISPONIBLE", 0, invFinal.GetInventarioFinal());
-            this.dataGridView1.Rows.Add(1109, "INVENTARIO", 0, 0);
-            this.dataGridView1.Rows.Add(4101, "COMPRAS", 0, 0);
-            this.dataGridView1.Rows.Add(0, "DETERMINAR COSTO DE VENTA", 0, 0);
+            this.dataGridView1.Rows.Add(1109, "INVENTARIO", costoVenta.inventario, 0) ;
+            this.dataGridView1.Rows.Add(4101, "COMPRAS", 0, costoVenta.compra);
+            this.dataGridView1.Rows.Add(0, "DETERMINAR COSTO DE VENTA", costoVenta.CalculoComprVenta(), costoVenta.CalculoComprVenta());
             this.dataGridView1.Refresh();
         }
     }
