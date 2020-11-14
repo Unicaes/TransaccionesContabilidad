@@ -9,7 +9,7 @@ namespace TransaccionesContabilidad.ViewModel
 {
     public class InventarioFinal
     {
-        double inventarioInicial, compras, ventas, inventarioFinal;
+        public double inventarioInicial, compras, ventas, inventarioFinal;
         public void CalcularInventarioFinal(DataGridView tabla)
         {
             for (int i = 0; i < tabla.Rows.Count; i++)
@@ -28,10 +28,6 @@ namespace TransaccionesContabilidad.ViewModel
                 }
             }
             inventarioFinal = inventarioInicial + compras - ventas;
-        }
-        public double GetInventarioFinal()
-        {
-            return inventarioFinal;
         }
     }
 }

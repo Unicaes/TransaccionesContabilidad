@@ -36,9 +36,9 @@ namespace TransaccionesContabilidad.View
             this.dataGridView1.Rows.Add(2109, "IVA CREDITO FISCAL", "$"+ Iva.ivaCredito,"$"+0 );
             this.dataGridView1.Rows.Add(211103, "IVA A PAGAR",0 , "$ " + Iva.ivaPagar);
             this.dataGridView1.Rows.Add("", "AJUSTE DE IVA", "$ " + Iva.ivaCredito, "$ " + (Iva.ivaDebito + Iva.ivaPagar));
-            this.dataGridView1.Rows.Add(4101, "COMPRAS", 0, 0);
-            this.dataGridView1.Rows.Add(1109, "INVENTARIO", 0, 0);
-            this.dataGridView1.Rows.Add(0, "MERCANCIA DISPONIBLE", 0, invFinal.GetInventarioFinal());
+            this.dataGridView1.Rows.Add(4101, "COMPRAS", invFinal.inventarioInicial, 0);
+            this.dataGridView1.Rows.Add(1109, "INVENTARIO", 0, invFinal.inventarioInicial);
+            this.dataGridView1.Rows.Add(0, "MERCANCIA DISPONIBLE", invFinal.inventarioInicial, invFinal.inventarioInicial);
             this.dataGridView1.Rows.Add(1109, "INVENTARIO", costoVenta.inventario, 0) ;
             this.dataGridView1.Rows.Add(4101, "COMPRAS", 0, costoVenta.compra);
             this.dataGridView1.Rows.Add(0, "DETERMINAR COSTO DE VENTA", costoVenta.CalculoComprVenta(), costoVenta.CalculoComprVenta());
